@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Mara Tours</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Mara Tours</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="services.html" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="destinations.html" class="nav-link">Destinations</a>
+                </li>
+                <li class="nav-item">
+                    <a href="team.html" class="nav-link">Our Team</a>
+                </li>
+                <li class="nav-item">
+                    <a href="gallery.html" class="nav-link active">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact Us</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="gallery-page-header">
+        <div class="container">
+            <h1>Travel Gallery</h1>
+            <p>Explore the beauty of our destinations through stunning photography</p>
+        </div>
+    </section>
+
+    <!-- Gallery Filter -->
+    <section class="gallery-filters">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Photos</button>
+                <button class="filter-btn" data-filter="safari">Safari</button>
+                <button class="filter-btn" data-filter="mountains">Mountains</button>
+                <button class="filter-btn" data-filter="beaches">Beaches</button>
+                <button class="filter-btn" data-filter="cities">Cities</button>
+                <button class="filter-btn" data-filter="culture">Culture</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="gallery">
+        <div class="container">
+            <div class="gallery-grid">
+                <!-- Safari Photos -->
+                <div class="gallery-item" data-category="safari">
+                    <img src="https://images.unsplash.com/photo-1506905925346-14b5e4d1f4c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="African Safari">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>African Safari</h3>
+                            <p>Serengeti National Park, Tanzania</p>
+                            <i class="fas fa-expand"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="safari">
+                    <img src="https://images.unsplash.com/photo-1506905925346-14b5e4d1f4c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Lion in the Wild">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Lion in the Wild</h3>
+                            <p>Masai Mara, Kenya</p>
+                            <i class="fas fa-expand"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mountain Photos -->
+                <div class="gallery-item" data-category="mountains">
+                    <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Swiss Alps">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Swiss Alps</h3>
+                            <p>Matterhorn, Switzerland</p>
+                            <i class="fas fa-expand"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="mountains">
+                    <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Himalayan Peaks">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Himalayan Peaks</h3>
+                            <p>Nepal</p>
+                            <i class="fas fa-expand"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Beach Photos -->
+                <div class="gallery-item" data-category="beaches">
+                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Maldives Paradise">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Maldives Paradise</h3>
+                            <p>Overwater Bungalow</p>
+                            <i class="fas fa-expand"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="beaches">
+                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Bali Beach">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Bali Beach</h3>
+                            <p>Nusa Dua, Indonesia</p>
+                            <i class="fas fa-expand"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- City Photos -->
+                <div class="gallery-item" data-category="cities">
+                    <img src="https://images.unsplash.com/photo-1539650116574-75c0c6d73c6e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Santorini Sunset">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Santorini Sunset</h3>
+                            <p>Oia, Greece</p>
+                            <i class="fas fa-expand"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="cities">
+                    <img src="https://images.unsplash.com/photo-1539650116574-75c0c6d73c6e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Paris Architecture">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Paris Architecture</h3>
+                            <p>Eiffel Tower, France</p>
+                            <i class="fas fa-expand"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Culture Photos -->
+                <div class="gallery-item" data-category="culture">
+                    <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Machu Picchu">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Machu Picchu</h3>
+                            <p>Incan Citadel, Peru</p>
+                            <i class="fas fa-expand"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="culture">
+                    <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Taj Mahal">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Taj Mahal</h3>
+                            <p>Agra, India</p>
+                            <i class="fas fa-expand"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional Photos -->
+                <div class="gallery-item" data-category="safari">
+                    <img src="https://images.unsplash.com/photo-1506905925346-14b5e4d1f4c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Elephant Herd">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Elephant Herd</h3>
+                            <p>Amboseli National Park, Kenya</p>
+                            <i class="fas fa-expand"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="mountains">
+                    <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Rocky Mountains">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Rocky Mountains</h3>
+                            <p>Colorado, USA</p>
+                            <i class="fas fa-expand"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="beaches">
+                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Caribbean Beach">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Caribbean Beach</h3>
+                            <p>Turks and Caicos</p>
+                            <i class="fas fa-expand"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="cities">
+                    <img src="https://images.unsplash.com/photo-1539650116574-75c0c6d73c6e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Tokyo Skyline">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Tokyo Skyline</h3>
+                            <p>Japan</p>
+                            <i class="fas fa-expand"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="culture">
+                    <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Angkor Wat">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Angkor Wat</h3>
+                            <p>Siem Reap, Cambodia</p>
+                            <i class="fas fa-expand"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="safari">
+                    <img src="https://images.unsplash.com/photo-1506905925346-14b5e4d1f4c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Giraffe Family">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Giraffe Family</h3>
+                            <p>Kruger National Park, South Africa</p>
+                            <i class="fas fa-expand"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <span class="lightbox-close">&times;</span>
+            <img class="lightbox-image" src="" alt="">
+            <div class="lightbox-info">
+                <h3 class="lightbox-title"></h3>
+                <p class="lightbox-location"></p>
+            </div>
+            <div class="lightbox-nav">
+                <button class="lightbox-prev" id="lightboxPrev">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="lightbox-next" id="lightboxNext">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Create Your Own Memories?</h2>
+                <p>Let us help you plan the perfect trip to capture moments like these</p>
+                <a href="contact.html" class="btn btn-primary btn-large">Start Planning</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Mara Tours</h3>
+                    <p>Your trusted partner in creating unforgettable travel experiences around the world.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="team.html">Our Team</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Flight Booking</a></li>
+                        <li><a href="services.html">Hotel Booking</a></li>
+                        <li><a href="services.html">Guided Tours</a></li>
+                        <li><a href="services.html">Car Rentals</a></li>
+                        <li><a href="services.html">Visa Assistance</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@maratours.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Travel Street, Adventure City</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Mara Tours. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/1234567890?text=Hi%20Mara%20Tours!%20I'm%20interested%20in%20planning%20a%20trip." class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>

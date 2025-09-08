@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations - Mara Tours</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Mara Tours</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="services.html" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="destinations.html" class="nav-link active">Destinations</a>
+                </li>
+                <li class="nav-item">
+                    <a href="team.html" class="nav-link">Our Team</a>
+                </li>
+                <li class="nav-item">
+                    <a href="gallery.html" class="nav-link">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact Us</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Explore Our Destinations</h1>
+            <p>Discover breathtaking places around the world with our carefully curated travel experiences</p>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="destination-filters">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Destinations</button>
+                <button class="filter-btn" data-filter="africa">Africa</button>
+                <button class="filter-btn" data-filter="europe">Europe</button>
+                <button class="filter-btn" data-filter="asia">Asia</button>
+                <button class="filter-btn" data-filter="americas">Americas</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destinations Grid -->
+    <section class="destinations">
+        <div class="container">
+            <div class="destinations-grid">
+                <div class="destination-card" data-category="africa">
+                    <div class="destination-image">
+                        <img src="./assets/img/pexels-tanzania-wild-sky-986912744-20179685.jpg" alt="Serengeti National Park">
+                        <div class="destination-overlay">
+                            <div class="destination-price">From $2,500</div>
+                        </div>
+                    </div>
+                    <div class="destination-content">
+                        <h3>Serengeti National Park</h3>
+                        <p class="destination-location"><i class="fas fa-map-marker-alt"></i> Tanzania, Africa</p>
+                        <p>Witness the Great Migration and experience the raw beauty of African wildlife in their natural habitat.</p>
+                        <div class="destination-features">
+                            <span class="feature-tag">Safari</span>
+                            <span class="feature-tag">Wildlife</span>
+                            <span class="feature-tag">Photography</span>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="destination-card" data-category="europe">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Swiss Alps">
+                        <div class="destination-overlay">
+                            <div class="destination-price">From $1,800</div>
+                        </div>
+                    </div>
+                    <div class="destination-content">
+                        <h3>Swiss Alps</h3>
+                        <p class="destination-location"><i class="fas fa-map-marker-alt"></i> Switzerland, Europe</p>
+                        <p>Experience breathtaking mountain views, pristine lakes, and charming alpine villages in the heart of Europe.</p>
+                        <div class="destination-features">
+                            <span class="feature-tag">Mountains</span>
+                            <span class="feature-tag">Adventure</span>
+                            <span class="feature-tag">Scenic</span>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="destination-card" data-category="asia">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Maldives">
+                        <div class="destination-overlay">
+                            <div class="destination-price">From $3,200</div>
+                        </div>
+                    </div>
+                    <div class="destination-content">
+                        <h3>Maldives</h3>
+                        <p class="destination-location"><i class="fas fa-map-marker-alt"></i> Maldives, Asia</p>
+                        <p>Relax in paradise with crystal-clear waters, pristine beaches, and luxurious overwater bungalows.</p>
+                        <div class="destination-features">
+                            <span class="feature-tag">Beach</span>
+                            <span class="feature-tag">Luxury</span>
+                            <span class="feature-tag">Relaxation</span>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="destination-card" data-category="americas">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Machu Picchu">
+                        <div class="destination-overlay">
+                            <div class="destination-price">From $1,500</div>
+                        </div>
+                    </div>
+                    <div class="destination-content">
+                        <h3>Machu Picchu</h3>
+                        <p class="destination-location"><i class="fas fa-map-marker-alt"></i> Peru, South America</p>
+                        <p>Discover the ancient Incan citadel perched high in the Andes Mountains, a UNESCO World Heritage site.</p>
+                        <div class="destination-features">
+                            <span class="feature-tag">History</span>
+                            <span class="feature-tag">Culture</span>
+                            <span class="feature-tag">Hiking</span>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="destination-card" data-category="europe">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1539650116574-75c0c6d73c6e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Santorini">
+                        <div class="destination-overlay">
+                            <div class="destination-price">From $2,100</div>
+                        </div>
+                    </div>
+                    <div class="destination-content">
+                        <h3>Santorini</h3>
+                        <p class="destination-location"><i class="fas fa-map-marker-alt"></i> Greece, Europe</p>
+                        <p>Experience the magic of white-washed buildings, blue domes, and stunning sunsets over the Aegean Sea.</p>
+                        <div class="destination-features">
+                            <span class="feature-tag">Island</span>
+                            <span class="feature-tag">Romance</span>
+                            <span class="feature-tag">Sunset</span>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="destination-card" data-category="asia">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1542640244-a13b6c94d6c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Bali">
+                        <div class="destination-overlay">
+                            <div class="destination-price">From $1,200</div>
+                        </div>
+                    </div>
+                    <div class="destination-content">
+                        <h3>Bali</h3>
+                        <p class="destination-location"><i class="fas fa-map-marker-alt"></i> Indonesia, Asia</p>
+                        <p>Immerse yourself in rich culture, beautiful temples, lush rice terraces, and pristine beaches.</p>
+                        <div class="destination-features">
+                            <span class="feature-tag">Culture</span>
+                            <span class="feature-tag">Beach</span>
+                            <span class="feature-tag">Wellness</span>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="destination-card" data-category="americas">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Grand Canyon">
+                        <div class="destination-overlay">
+                            <div class="destination-price">From $900</div>
+                        </div>
+                    </div>
+                    <div class="destination-content">
+                        <h3>Grand Canyon</h3>
+                        <p class="destination-location"><i class="fas fa-map-marker-alt"></i> Arizona, USA</p>
+                        <p>Marvel at one of the world's most spectacular natural wonders, carved by the Colorado River over millions of years.</p>
+                        <div class="destination-features">
+                            <span class="feature-tag">Nature</span>
+                            <span class="feature-tag">Hiking</span>
+                            <span class="feature-tag">Photography</span>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="destination-card" data-category="africa">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1506905925346-14b5e4d1f4c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Victoria Falls">
+                        <div class="destination-overlay">
+                            <div class="destination-price">From $1,800</div>
+                        </div>
+                    </div>
+                    <div class="destination-content">
+                        <h3>Victoria Falls</h3>
+                        <p class="destination-location"><i class="fas fa-map-marker-alt"></i> Zambia/Zimbabwe, Africa</p>
+                        <p>Experience the power and beauty of one of the world's largest waterfalls, known as "The Smoke That Thunders."</p>
+                        <div class="destination-features">
+                            <span class="feature-tag">Waterfalls</span>
+                            <span class="feature-tag">Adventure</span>
+                            <span class="feature-tag">Nature</span>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Can't Find Your Dream Destination?</h2>
+                <p>We can create custom itineraries for any destination you have in mind</p>
+                <a href="contact.html" class="btn btn-primary btn-large">Plan Custom Trip</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Mara Tours</h3>
+                    <p>Your trusted partner in creating unforgettable travel experiences around the world.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Flight Booking</a></li>
+                        <li><a href="services.html">Hotel Booking</a></li>
+                        <li><a href="services.html">Guided Tours</a></li>
+                        <li><a href="services.html">Car Rentals</a></li>
+                        <li><a href="services.html">Visa Assistance</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@maratours.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Travel Street, Adventure City</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Mara Tours. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/1234567890?text=Hi%20Mara%20Tours!%20I'm%20interested%20in%20planning%20a%20trip." class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
