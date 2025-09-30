@@ -59,10 +59,11 @@
         <div class="container">
             <div class="filter-buttons">
                 <button class="filter-btn active" data-filter="all">All Destinations</button>
-                <button class="filter-btn" data-filter="africa">Africa</button>
-                <button class="filter-btn" data-filter="europe">Europe</button>
-                <button class="filter-btn" data-filter="asia">Asia</button>
-                <button class="filter-btn" data-filter="americas">Americas</button>
+                <button class="filter-btn" data-filter="kenya">Kenya</button>
+                <button class="filter-btn" data-filter="uganda">Uganda</button>
+                <button class="filter-btn" data-filter="tanzania">Tanzania</button>
+                <button class="filter-btn" data-filter="rwanda">Rwanda</button>
+                <button class="filter-btn" data-filter="south-africa">South Africa</button>
             </div>
         </div>
     </section>
@@ -71,17 +72,18 @@
     <section class="destinations">
         <div class="container">
             <div class="destinations-grid">
-                <div class="destination-card" data-category="africa">
+                <!-- Kenya (6) -->
+                <div class="destination-card" data-category="kenya">
                     <div class="destination-image">
-                        <img src="./assets/img/pexels-tanzania-wild-sky-986912744-20179685.jpg" alt="Serengeti National Park">
+                        <img src="./assets/img/maasai-safari.jpg" alt="Maasai Mara National Reserve">
                         <div class="destination-overlay">
-                            <div class="destination-price">From $2,500</div>
+                            <div class="destination-price">From $1,900</div>
                         </div>
                     </div>
                     <div class="destination-content">
-                        <h3>Serengeti National Park</h3>
-                        <p class="destination-location"><i class="fas fa-map-marker-alt"></i> Tanzania, Africa</p>
-                        <p>Witness the Great Migration and experience the raw beauty of African wildlife in their natural habitat.</p>
+                        <h3>Maasai Mara National Reserve</h3>
+                        <p class="destination-location"><i class="fas fa-map-marker-alt"></i> Kenya</p>
+                        <p>Iconic safari destination famed for the Great Migration, big cats, and sweeping savannahs.</p>
                         <div class="destination-features">
                             <span class="feature-tag">Safari</span>
                             <span class="feature-tag">Wildlife</span>
@@ -91,141 +93,585 @@
                     </div>
                 </div>
 
-                <div class="destination-card" data-category="europe">
+                <div class="destination-card" data-category="kenya">
                     <div class="destination-image">
-                        <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Swiss Alps">
-                        <div class="destination-overlay">
-                            <div class="destination-price">From $1,800</div>
-                        </div>
-                    </div>
-                    <div class="destination-content">
-                        <h3>Swiss Alps</h3>
-                        <p class="destination-location"><i class="fas fa-map-marker-alt"></i> Switzerland, Europe</p>
-                        <p>Experience breathtaking mountain views, pristine lakes, and charming alpine villages in the heart of Europe.</p>
-                        <div class="destination-features">
-                            <span class="feature-tag">Mountains</span>
-                            <span class="feature-tag">Adventure</span>
-                            <span class="feature-tag">Scenic</span>
-                        </div>
-                        <a href="contact.html" class="btn btn-primary">Learn More</a>
-                    </div>
-                </div>
-
-                <div class="destination-card" data-category="asia">
-                    <div class="destination-image">
-                        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Maldives">
-                        <div class="destination-overlay">
-                            <div class="destination-price">From $3,200</div>
-                        </div>
-                    </div>
-                    <div class="destination-content">
-                        <h3>Maldives</h3>
-                        <p class="destination-location"><i class="fas fa-map-marker-alt"></i> Maldives, Asia</p>
-                        <p>Relax in paradise with crystal-clear waters, pristine beaches, and luxurious overwater bungalows.</p>
-                        <div class="destination-features">
-                            <span class="feature-tag">Beach</span>
-                            <span class="feature-tag">Luxury</span>
-                            <span class="feature-tag">Relaxation</span>
-                        </div>
-                        <a href="contact.html" class="btn btn-primary">Learn More</a>
-                    </div>
-                </div>
-
-                <div class="destination-card" data-category="americas">
-                    <div class="destination-image">
-                        <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Machu Picchu">
-                        <div class="destination-overlay">
-                            <div class="destination-price">From $1,500</div>
-                        </div>
-                    </div>
-                    <div class="destination-content">
-                        <h3>Machu Picchu</h3>
-                        <p class="destination-location"><i class="fas fa-map-marker-alt"></i> Peru, South America</p>
-                        <p>Discover the ancient Incan citadel perched high in the Andes Mountains, a UNESCO World Heritage site.</p>
-                        <div class="destination-features">
-                            <span class="feature-tag">History</span>
-                            <span class="feature-tag">Culture</span>
-                            <span class="feature-tag">Hiking</span>
-                        </div>
-                        <a href="contact.html" class="btn btn-primary">Learn More</a>
-                    </div>
-                </div>
-
-                <div class="destination-card" data-category="europe">
-                    <div class="destination-image">
-                        <img src="https://images.unsplash.com/photo-1539650116574-75c0c6d73c6e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Santorini">
-                        <div class="destination-overlay">
-                            <div class="destination-price">From $2,100</div>
-                        </div>
-                    </div>
-                    <div class="destination-content">
-                        <h3>Santorini</h3>
-                        <p class="destination-location"><i class="fas fa-map-marker-alt"></i> Greece, Europe</p>
-                        <p>Experience the magic of white-washed buildings, blue domes, and stunning sunsets over the Aegean Sea.</p>
-                        <div class="destination-features">
-                            <span class="feature-tag">Island</span>
-                            <span class="feature-tag">Romance</span>
-                            <span class="feature-tag">Sunset</span>
-                        </div>
-                        <a href="contact.html" class="btn btn-primary">Learn More</a>
-                    </div>
-                </div>
-
-                <div class="destination-card" data-category="asia">
-                    <div class="destination-image">
-                        <img src="https://images.unsplash.com/photo-1542640244-a13b6c94d6c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Bali">
+                        <img src="./assets/img/beach 2.jpg" alt="Diani Beach">
                         <div class="destination-overlay">
                             <div class="destination-price">From $1,200</div>
                         </div>
                     </div>
                     <div class="destination-content">
-                        <h3>Bali</h3>
-                        <p class="destination-location"><i class="fas fa-map-marker-alt"></i> Indonesia, Asia</p>
-                        <p>Immerse yourself in rich culture, beautiful temples, lush rice terraces, and pristine beaches.</p>
+                        <h3>Diani Beach</h3>
+                        <p class="destination-location"><i class="fas fa-map-marker-alt"></i> Kenya</p>
+                        <p>Powder-white sands, turquoise waters, and palm-lined shores perfect for relaxation and water sports.</p>
                         <div class="destination-features">
-                            <span class="feature-tag">Culture</span>
                             <span class="feature-tag">Beach</span>
-                            <span class="feature-tag">Wellness</span>
+                            <span class="feature-tag">Relaxation</span>
+                            <span class="feature-tag">Water Sports</span>
                         </div>
                         <a href="contact.html" class="btn btn-primary">Learn More</a>
                     </div>
                 </div>
 
-                <div class="destination-card" data-category="americas">
+                <div class="destination-card" data-category="kenya">
                     <div class="destination-image">
-                        <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Grand Canyon">
+                        <img src="./assets/img/beach.jpg" alt="Malindi Beach">
                         <div class="destination-overlay">
-                            <div class="destination-price">From $900</div>
+                            <div class="destination-price">From $1,050</div>
                         </div>
                     </div>
                     <div class="destination-content">
-                        <h3>Grand Canyon</h3>
-                        <p class="destination-location"><i class="fas fa-map-marker-alt"></i> Arizona, USA</p>
-                        <p>Marvel at one of the world's most spectacular natural wonders, carved by the Colorado River over millions of years.</p>
+                        <h3>Malindi</h3>
+                        <p class="destination-location"><i class="fas fa-map-marker-alt"></i> Kenya</p>
+                        <p>Historic coastal town with coral gardens, laid-back vibes, and magical sunsets on the Indian Ocean.</p>
                         <div class="destination-features">
-                            <span class="feature-tag">Nature</span>
-                            <span class="feature-tag">Hiking</span>
+                            <span class="feature-tag">Beach</span>
+                            <span class="feature-tag">Snorkeling</span>
+                            <span class="feature-tag">Culture</span>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="destination-card" data-category="kenya">
+                    <div class="destination-image">
+                        <img src="./assets/img/beach 2.jpg" alt="Mombasa Beaches">
+                        <div class="destination-overlay">
+                            <div class="destination-price">From $990</div>
+                        </div>
+                    </div>
+                    <div class="destination-content">
+                        <h3>Mombasa</h3>
+                        <p class="destination-location"><i class="fas fa-map-marker-alt"></i> Kenya</p>
+                        <p>Vibrant coastal hub blending Swahili culture with sun-drenched beaches and historic Fort Jesus.</p>
+                        <div class="destination-features">
+                            <span class="feature-tag">Beach</span>
+                            <span class="feature-tag">Culture</span>
+                            <span class="feature-tag">Cuisine</span>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="destination-card" data-category="kenya">
+                    <div class="destination-image">
+                        <img src="./assets/img/giraffe safari.jpg" alt="Giraffe Centre Nairobi">
+                        <div class="destination-overlay">
+                            <div class="destination-price">From $350</div>
+                        </div>
+                    </div>
+                    <div class="destination-content">
+                        <h3>Giraffe Centre, Nairobi</h3>
+                        <p class="destination-location"><i class="fas fa-map-marker-alt"></i> Kenya</p>
+                        <p>Meet endangered Rothschild giraffes up close and learn about vital conservation efforts.</p>
+                        <div class="destination-features">
+                            <span class="feature-tag">Safari</span>
+                            <span class="feature-tag">Wildlife</span>
+                            <span class="feature-tag">Family</span>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="destination-card" data-category="kenya">
+                    <div class="destination-image">
+                        <img src="./assets/img/safari.jpg" alt="Nairobi National Park">
+                        <div class="destination-overlay">
+                            <div class="destination-price">From $420</div>
+                        </div>
+                    </div>
+                    <div class="destination-content">
+                        <h3>Nairobi National Park</h3>
+                        <p class="destination-location"><i class="fas fa-map-marker-alt"></i> Kenya</p>
+                        <p>Wildlife haven on the city’s edge—spot lions, rhinos, and giraffes with a skyscraper backdrop.</p>
+                        <div class="destination-features">
+                            <span class="feature-tag">Safari</span>
+                            <span class="feature-tag">Big Five</span>
+                            <span class="feature-tag">Day Trip</span>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+
+                <!-- Uganda (6) -->
+                <div class="destination-card" data-category="uganda">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1544989164-31dc3c645987?q=80&w=1200&auto=format&fit=crop" alt="Bwindi Impenetrable Forest">
+                        <div class="destination-overlay">
+                            <div class="destination-price">From $2,600</div>
+                        </div>
+                    </div>
+                    <div class="destination-content">
+                        <h3>Bwindi Impenetrable Forest</h3>
+                        <p class="destination-location"><i class="fas fa-map-marker-alt"></i> Uganda</p>
+                        <p>Track endangered mountain gorillas through misty rainforest on a once-in-a-lifetime trek.</p>
+                        <div class="destination-features">
+                            <span class="feature-tag">Gorilla Trekking</span>
+                            <span class="feature-tag">Rainforest</span>
+                            <span class="feature-tag">Adventure</span>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="destination-card" data-category="uganda">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1549880338-65ddcdfd017b?q=80&w=1200&auto=format&fit=crop" alt="Murchison Falls">
+                        <div class="destination-overlay">
+                            <div class="destination-price">From $1,450</div>
+                        </div>
+                    </div>
+                    <div class="destination-content">
+                        <h3>Murchison Falls National Park</h3>
+                        <p class="destination-location"><i class="fas fa-map-marker-alt"></i> Uganda</p>
+                        <p>The Nile squeezes through a narrow gorge exploding into thunderous falls—plus classic savannah safaris.</p>
+                        <div class="destination-features">
+                            <span class="feature-tag">Safari</span>
+                            <span class="feature-tag">Waterfalls</span>
+                            <span class="feature-tag">Boat Cruise</span>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="destination-card" data-category="uganda">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1482192505345-5655af888cc4?q=80&w=1200&auto=format&fit=crop" alt="Queen Elizabeth National Park">
+                        <div class="destination-overlay">
+                            <div class="destination-price">From $1,380</div>
+                        </div>
+                    </div>
+                    <div class="destination-content">
+                        <h3>Queen Elizabeth National Park</h3>
+                        <p class="destination-location"><i class="fas fa-map-marker-alt"></i> Uganda</p>
+                        <p>Home to tree-climbing lions, crater lakes, and the wildlife-rich Kazinga Channel.</p>
+                        <div class="destination-features">
+                            <span class="feature-tag">Safari</span>
+                            <span class="feature-tag">Boat Safari</span>
                             <span class="feature-tag">Photography</span>
                         </div>
                         <a href="contact.html" class="btn btn-primary">Learn More</a>
                     </div>
                 </div>
 
-                <div class="destination-card" data-category="africa">
+                <div class="destination-card" data-category="uganda">
                     <div class="destination-image">
-                        <img src="https://images.unsplash.com/photo-1506905925346-14b5e4d1f4c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Victoria Falls">
+                        <img src="https://images.unsplash.com/photo-1463428537233-c84b8278b7ff?q=80&w=1200&auto=format&fit=crop" alt="Jinja - Source of the Nile">
                         <div class="destination-overlay">
-                            <div class="destination-price">From $1,800</div>
+                            <div class="destination-price">From $780</div>
                         </div>
                     </div>
                     <div class="destination-content">
-                        <h3>Victoria Falls</h3>
-                        <p class="destination-location"><i class="fas fa-map-marker-alt"></i> Zambia/Zimbabwe, Africa</p>
-                        <p>Experience the power and beauty of one of the world's largest waterfalls, known as "The Smoke That Thunders."</p>
+                        <h3>Jinja – Source of the Nile</h3>
+                        <p class="destination-location"><i class="fas fa-map-marker-alt"></i> Uganda</p>
+                        <p>East Africa’s adventure capital: white-water rafting, bungee jumping, quad biking, and sunset cruises.</p>
                         <div class="destination-features">
-                            <span class="feature-tag">Waterfalls</span>
                             <span class="feature-tag">Adventure</span>
+                            <span class="feature-tag">Rafting</span>
+                            <span class="feature-tag">Culture</span>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="destination-card" data-category="uganda">
+                    <div class="destination-image">
+                        <img src="./assets/img/trekking3.jpg" alt="Kibale Forest National Park">
+                        <div class="destination-overlay">
+                            <div class="destination-price">From $1,650</div>
+                        </div>
+                    </div>
+                    <div class="destination-content">
+                        <h3>Kibale Forest National Park</h3>
+                        <p class="destination-location"><i class="fas fa-map-marker-alt"></i> Uganda</p>
+                        <p>Chimpanzee tracking in lush rainforest with over a dozen primate species.</p>
+                        <div class="destination-features">
+                            <span class="feature-tag">Primate Trekking</span>
+                            <span class="feature-tag">Rainforest</span>
+                            <span class="feature-tag">Birding</span>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="destination-card" data-category="uganda">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop" alt="Sipi Falls">
+                        <div class="destination-overlay">
+                            <div class="destination-price">From $890</div>
+                        </div>
+                    </div>
+                    <div class="destination-content">
+                        <h3>Sipi Falls</h3>
+                        <p class="destination-location"><i class="fas fa-map-marker-alt"></i> Uganda</p>
+                        <p>Triple-tiered waterfalls on the slopes of Mount Elgon; epic hikes and coffee tours await.</p>
+                        <div class="destination-features">
+                            <span class="feature-tag">Hiking</span>
+                            <span class="feature-tag">Waterfalls</span>
+                            <span class="feature-tag">Scenery</span>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+
+                <!-- Tanzania (6) -->
+                <div class="destination-card" data-category="tanzania">
+                    <div class="destination-image">
+                        <img src="./assets/img/pexels-tanzania-wild-sky-986912744-20179685.jpg" alt="Serengeti National Park">
+                        <div class="destination-overlay">
+                            <div class="destination-price">From $2,500</div>
+                        </div>
+                    </div>
+                    <div class="destination-content">
+                        <h3>Serengeti National Park</h3>
+                        <p class="destination-location"><i class="fas fa-map-marker-alt"></i> Tanzania</p>
+                        <p>Classic African safari—endless plains, the Great Migration, and iconic wildlife encounters.</p>
+                        <div class="destination-features">
+                            <span class="feature-tag">Safari</span>
+                            <span class="feature-tag">Wildlife</span>
+                            <span class="feature-tag">Photography</span>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="destination-card" data-category="tanzania">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1544989164-31dc3c645987?q=80&w=1200&auto=format&fit=crop" alt="Ngorongoro Crater">
+                        <div class="destination-overlay">
+                            <div class="destination-price">From $2,200</div>
+                        </div>
+                    </div>
+                    <div class="destination-content">
+                        <h3>Ngorongoro Crater</h3>
+                        <p class="destination-location"><i class="fas fa-map-marker-alt"></i> Tanzania</p>
+                        <p>UNESCO-listed caldera teeming with wildlife set against dramatic highland vistas.</p>
+                        <div class="destination-features">
+                            <span class="feature-tag">Safari</span>
+                            <span class="feature-tag">Scenery</span>
+                            <span class="feature-tag">Big Five</span>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="destination-card" data-category="tanzania">
+                    <div class="destination-image">
+                        <img src="./assets/img/trekking2.jpg" alt="Mount Kilimanjaro">
+                        <div class="destination-overlay">
+                            <div class="destination-price">From $2,950</div>
+                        </div>
+                    </div>
+                    <div class="destination-content">
+                        <h3>Mount Kilimanjaro</h3>
+                        <p class="destination-location"><i class="fas fa-map-marker-alt"></i> Tanzania</p>
+                        <p>Africa’s rooftop—multi-day trek through rainforest, moorland, and alpine desert to Uhuru Peak.</p>
+                        <div class="destination-features">
+                            <span class="feature-tag">Trekking</span>
+                            <span class="feature-tag">Adventure</span>
+                            <span class="feature-tag">Bucket List</span>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="destination-card" data-category="tanzania">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1523731407965-2430cd12f5e4?q=80&w=1200&auto=format&fit=crop" alt="Stone Town, Zanzibar">
+                        <div class="destination-overlay">
+                            <div class="destination-price">From $1,150</div>
+                        </div>
+                    </div>
+                    <div class="destination-content">
+                        <h3>Stone Town, Zanzibar</h3>
+                        <p class="destination-location"><i class="fas fa-map-marker-alt"></i> Tanzania</p>
+                        <p>Labyrinthine alleys, spice-scented markets, and magical sunsets on the Swahili coast.</p>
+                        <div class="destination-features">
+                            <span class="feature-tag">Culture</span>
+                            <span class="feature-tag">Heritage</span>
+                            <span class="feature-tag">Beach</span>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="destination-card" data-category="tanzania">
+                    <div class="destination-image">
+                        <img src="./assets/img/beach 2.jpg" alt="Nungwi Beach, Zanzibar">
+                        <div class="destination-overlay">
+                            <div class="destination-price">From $1,250</div>
+                        </div>
+                    </div>
+                    <div class="destination-content">
+                        <h3>Nungwi Beach</h3>
+                        <p class="destination-location"><i class="fas fa-map-marker-alt"></i> Tanzania</p>
+                        <p>Crystal-clear waters and dhow-dotted horizons—perfect for snorkeling and sunset sails.</p>
+                        <div class="destination-features">
+                            <span class="feature-tag">Beach</span>
+                            <span class="feature-tag">Snorkeling</span>
+                            <span class="feature-tag">Relaxation</span>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="destination-card" data-category="tanzania">
+                    <div class="destination-image">
+                        <img src="./assets/img/elephant-safari.jpg" alt="Tarangire National Park">
+                        <div class="destination-overlay">
+                            <div class="destination-price">From $1,480</div>
+                        </div>
+                    </div>
+                    <div class="destination-content">
+                        <h3>Tarangire National Park</h3>
+                        <p class="destination-location"><i class="fas fa-map-marker-alt"></i> Tanzania</p>
+                        <p>Baobab-studded landscapes and giant elephant herds along the Tarangire River.</p>
+                        <div class="destination-features">
+                            <span class="feature-tag">Safari</span>
+                            <span class="feature-tag">Elephants</span>
+                            <span class="feature-tag">Scenic</span>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+
+                <!-- Rwanda (6) -->
+                <div class="destination-card" data-category="rwanda">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1558981285-6f0c94958bb6?q=80&w=1200&auto=format&fit=crop" alt="Volcanoes National Park">
+                        <div class="destination-overlay">
+                            <div class="destination-price">From $2,750</div>
+                        </div>
+                    </div>
+                    <div class="destination-content">
+                        <h3>Volcanoes National Park</h3>
+                        <p class="destination-location"><i class="fas fa-map-marker-alt"></i> Rwanda</p>
+                        <p>Follow Dian Fossey’s legacy and encounter mountain gorillas on emerald volcano slopes.</p>
+                        <div class="destination-features">
+                            <span class="feature-tag">Gorilla Trekking</span>
+                            <span class="feature-tag">Mountains</span>
+                            <span class="feature-tag">Conservation</span>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="destination-card" data-category="rwanda">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1562689848-699571f1f8f3?q=80&w=1200&auto=format&fit=crop" alt="Nyungwe Forest Canopy Walk">
+                        <div class="destination-overlay">
+                            <div class="destination-price">From $1,320</div>
+                        </div>
+                    </div>
+                    <div class="destination-content">
+                        <h3>Nyungwe Forest Canopy Walk</h3>
+                        <p class="destination-location"><i class="fas fa-map-marker-alt"></i> Rwanda</p>
+                        <p>Suspended walkways above ancient rainforest with rich birdlife and colobus monkeys.</p>
+                        <div class="destination-features">
+                            <span class="feature-tag">Forest</span>
+                            <span class="feature-tag">Hiking</span>
+                            <span class="feature-tag">Birding</span>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="destination-card" data-category="rwanda">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1548786811-dd6e453cccae?q=80&w=1200&auto=format&fit=crop" alt="Lake Kivu">
+                        <div class="destination-overlay">
+                            <div class="destination-price">From $980</div>
+                        </div>
+                    </div>
+                    <div class="destination-content">
+                        <h3>Lake Kivu</h3>
+                        <p class="destination-location"><i class="fas fa-map-marker-alt"></i> Rwanda</p>
+                        <p>Serene lakeside retreats, boat trips between islands, and golden-hour views.</p>
+                        <div class="destination-features">
+                            <span class="feature-tag">Relaxation</span>
+                            <span class="feature-tag">Boat Cruise</span>
+                            <span class="feature-tag">Scenic</span>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="destination-card" data-category="rwanda">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?q=80&w=1200&auto=format&fit=crop" alt="Akagera National Park">
+                        <div class="destination-overlay">
+                            <div class="destination-price">From $1,450</div>
+                        </div>
+                    </div>
+                    <div class="destination-content">
+                        <h3>Akagera National Park</h3>
+                        <p class="destination-location"><i class="fas fa-map-marker-alt"></i> Rwanda</p>
+                        <p>Rolling savannah, shimmering lakes, and a conservation success story with the Big Five.</p>
+                        <div class="destination-features">
+                            <span class="feature-tag">Safari</span>
+                            <span class="feature-tag">Boat Safari</span>
+                            <span class="feature-tag">Wildlife</span>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="destination-card" data-category="rwanda">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1505764706515-aa95265c5abc?q=80&w=1200&auto=format&fit=crop" alt="Kigali Genocide Memorial">
+                        <div class="destination-overlay">
+                            <div class="destination-price">From $300</div>
+                        </div>
+                    </div>
+                    <div class="destination-content">
+                        <h3>Kigali Genocide Memorial</h3>
+                        <p class="destination-location"><i class="fas fa-map-marker-alt"></i> Rwanda</p>
+                        <p>A powerful, dignified tribute and educational center honoring remembrance and resilience.</p>
+                        <div class="destination-features">
+                            <span class="feature-tag">Culture</span>
+                            <span class="feature-tag">History</span>
+                            <span class="feature-tag">Education</span>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="destination-card" data-category="rwanda">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1558980664-10ed9e5f4e38?q=80&w=1200&auto=format&fit=crop" alt="Mount Bisoke Hike">
+                        <div class="destination-overlay">
+                            <div class="destination-price">From $780</div>
+                        </div>
+                    </div>
+                    <div class="destination-content">
+                        <h3>Mount Bisoke Hike</h3>
+                        <p class="destination-location"><i class="fas fa-map-marker-alt"></i> Rwanda</p>
+                        <p>Day hike to a crater lake with misty mountain views and afro-alpine flora.</p>
+                        <div class="destination-features">
+                            <span class="feature-tag">Hiking</span>
+                            <span class="feature-tag">Mountains</span>
+                            <span class="feature-tag">Adventure</span>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+
+                <!-- South Africa (6) -->
+                <div class="destination-card" data-category="south-africa">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1535914254981-b5012eebbd15?q=80&w=1200&auto=format&fit=crop" alt="Kruger National Park">
+                        <div class="destination-overlay">
+                            <div class="destination-price">From $1,950</div>
+                        </div>
+                    </div>
+                    <div class="destination-content">
+                        <h3>Kruger National Park</h3>
+                        <p class="destination-location"><i class="fas fa-map-marker-alt"></i> South Africa</p>
+                        <p>One of Africa’s premier reserves with abundant wildlife and diverse ecosystems.</p>
+                        <div class="destination-features">
+                            <span class="feature-tag">Safari</span>
+                            <span class="feature-tag">Big Five</span>
+                            <span class="feature-tag">Photography</span>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="destination-card" data-category="south-africa">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1563371351-e53ebb744a1b?q=80&w=1200&auto=format&fit=crop" alt="Table Mountain, Cape Town">
+                        <div class="destination-overlay">
+                            <div class="destination-price">From $1,150</div>
+                        </div>
+                    </div>
+                    <div class="destination-content">
+                        <h3>Table Mountain, Cape Town</h3>
+                        <p class="destination-location"><i class="fas fa-map-marker-alt"></i> South Africa</p>
+                        <p>Ride the cableway or hike up for sweeping views of the Mother City and Atlantic.</p>
+                        <div class="destination-features">
+                            <span class="feature-tag">City</span>
+                            <span class="feature-tag">Hiking</span>
+                            <span class="feature-tag">Scenic</span>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="destination-card" data-category="south-africa">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1534351590666-13e3e96b5017?q=80&w=1200&auto=format&fit=crop" alt="Cape Winelands, Stellenbosch">
+                        <div class="destination-overlay">
+                            <div class="destination-price">From $980</div>
+                        </div>
+                    </div>
+                    <div class="destination-content">
+                        <h3>Cape Winelands, Stellenbosch</h3>
+                        <p class="destination-location"><i class="fas fa-map-marker-alt"></i> South Africa</p>
+                        <p>Historic estates, award-winning vintages, and dramatic mountain backdrops.</p>
+                        <div class="destination-features">
+                            <span class="feature-tag">Wine</span>
+                            <span class="feature-tag">Cuisine</span>
+                            <span class="feature-tag">Scenic</span>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="destination-card" data-category="south-africa">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1505506874110-6a7a69069a08?q=80&w=1200&auto=format&fit=crop" alt="Garden Route">
+                        <div class="destination-overlay">
+                            <div class="destination-price">From $1,300</div>
+                        </div>
+                    </div>
+                    <div class="destination-content">
+                        <h3>Garden Route</h3>
+                        <p class="destination-location"><i class="fas fa-map-marker-alt"></i> South Africa</p>
+                        <p>Road-trip paradise along forests, lagoons, beaches, and charming seaside towns.</p>
+                        <div class="destination-features">
+                            <span class="feature-tag">Road Trip</span>
+                            <span class="feature-tag">Beach</span>
                             <span class="feature-tag">Nature</span>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="destination-card" data-category="south-africa">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1523757956233-94a86ff74ea5?q=80&w=1200&auto=format&fit=crop" alt="uKhahlamba-Drakensberg Park">
+                        <div class="destination-overlay">
+                            <div class="destination-price">From $1,420</div>
+                        </div>
+                    </div>
+                    <div class="destination-content">
+                        <h3>uKhahlamba-Drakensberg Park</h3>
+                        <p class="destination-location"><i class="fas fa-map-marker-alt"></i> South Africa</p>
+                        <p>Dramatic basalt cliffs, San rock art, and world-class multi-day hiking routes.</p>
+                        <div class="destination-features">
+                            <span class="feature-tag">Mountains</span>
+                            <span class="feature-tag">Hiking</span>
+                            <span class="feature-tag">Heritage</span>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="destination-card" data-category="south-africa">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1563963231429-e680db5d34d3?q=80&w=1200&auto=format&fit=crop" alt="Boulders Beach Penguins">
+                        <div class="destination-overlay">
+                            <div class="destination-price">From $760</div>
+                        </div>
+                    </div>
+                    <div class="destination-content">
+                        <h3>Boulders Beach Penguins</h3>
+                        <p class="destination-location"><i class="fas fa-map-marker-alt"></i> South Africa</p>
+                        <p>Walkways over granite boulders to see the charismatic African penguin colony up close.</p>
+                        <div class="destination-features">
+                            <span class="feature-tag">Wildlife</span>
+                            <span class="feature-tag">Beach</span>
+                            <span class="feature-tag">Family</span>
                         </div>
                         <a href="contact.html" class="btn btn-primary">Learn More</a>
                     </div>
