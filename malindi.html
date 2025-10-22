@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -427,3 +428,434 @@
     </script>
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malindi - Mara Tours</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .hero-carousel {
+            height: 60vh;
+            min-height: 400px;
+        }
+        .hero-carousel .carousel-item {
+            height: 60vh;
+            min-height: 400px;
+        }
+        .hero-carousel .carousel-item img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .amenity-icon {
+            font-size: 2rem;
+            color: #667eea;
+            margin-bottom: 1rem;
+        }
+        .price-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 15px;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+        }
+        .duration-badge {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html" style="color: #667eea; font-size: 1.8rem;">Mara Tours</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="destinations.html">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="team.html">Our Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Carousel -->
+    <div id="heroCarousel" class="carousel slide hero-carousel" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./assets/img/beach.jpg" class="d-block w-100" alt="Malindi Beach">
+                <div class="carousel-caption d-flex align-items-center justify-content-center h-100">
+                    <div class="text-center">
+                        <h1 class="display-4 fw-bold mb-3">Malindi</h1>
+                        <p class="lead">Historic Coastal Paradise</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2000&q=80" class="d-block w-100" alt="Malindi Snorkeling">
+                <div class="carousel-caption d-flex align-items-center justify-content-center h-100">
+                    <div class="text-center">
+                        <h1 class="display-4 fw-bold mb-3">Coral Gardens</h1>
+                        <p class="lead">Explore vibrant underwater worlds</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2000&q=80" class="d-block w-100" alt="Malindi Sunset">
+                <div class="carousel-caption d-flex align-items-center justify-content-center h-100">
+                    <div class="text-center">
+                        <h1 class="display-4 fw-bold mb-3">Magical Sunsets</h1>
+                        <p class="lead">Witness breathtaking Indian Ocean sunsets</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <!-- Destination Description -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center fade-in">
+                    <h2 class="h1 mb-4">Discover Malindi</h2>
+                    <p class="lead text-muted mb-5">
+                        Malindi is a historic coastal town that perfectly blends Swahili culture with pristine beaches and 
+                        vibrant coral reefs. Known for its laid-back atmosphere, this charming destination offers 
+                        excellent snorkeling opportunities, historic Portuguese ruins, and some of the most beautiful 
+                        sunsets on the Kenyan coast. Whether you're exploring the underwater world, visiting the 
+                        historic Vasco da Gama pillar, or simply relaxing on the beach, Malindi promises an authentic 
+                        coastal experience.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trip Details & Booking -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <!-- Trip Information -->
+                <div class="col-lg-8 mb-4">
+                    <div class="row g-4">
+                        <!-- Duration -->
+                        <div class="col-md-4">
+                            <div class="card h-100 border-0 shadow-sm fade-in">
+                                <div class="card-body text-center">
+                                    <i class="fas fa-calendar-alt amenity-icon"></i>
+                                    <h5 class="card-title">Duration</h5>
+                                    <p class="card-text text-muted">3 Days / 2 Nights</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Price -->
+                        <div class="col-md-4">
+                            <div class="card h-100 border-0 shadow-sm fade-in">
+                                <div class="card-body text-center">
+                                    <i class="fas fa-dollar-sign amenity-icon"></i>
+                                    <h5 class="card-title">Price per Person</h5>
+                                    <p class="card-text text-muted">From $1,050</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Group Size -->
+                        <div class="col-md-4">
+                            <div class="card h-100 border-0 shadow-sm fade-in">
+                                <div class="card-body text-center">
+                                    <i class="fas fa-users amenity-icon"></i>
+                                    <h5 class="card-title">Group Size</h5>
+                                    <p class="card-text text-muted">2-10 People</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Amenities -->
+                    <div class="mt-5 fade-in">
+                        <h3 class="mb-4">What's Included</h3>
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-check-circle text-success me-3"></i>
+                                    <span>Airport transfers</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-check-circle text-success me-3"></i>
+                                    <span>2 nights beachfront hotel</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-check-circle text-success me-3"></i>
+                                    <span>All meals included</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-check-circle text-success me-3"></i>
+                                    <span>Snorkeling equipment</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-check-circle text-success me-3"></i>
+                                    <span>Historic site tours</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-check-circle text-success me-3"></i>
+                                    <span>Professional guide</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-check-circle text-success me-3"></i>
+                                    <span>Dhow sailing trip</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-check-circle text-success me-3"></i>
+                                    <span>All entrance fees</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Booking Card -->
+                <div class="col-lg-4">
+                    <div class="price-card fade-in">
+                        <div class="duration-badge">
+                            <i class="fas fa-clock me-2"></i>3 Days / 2 Nights
+                        </div>
+                        <h3 class="mb-3">From $1,050</h3>
+                        <p class="mb-4">per person</p>
+                        <div class="mb-4">
+                            <h5 class="mb-3">What's Included:</h5>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="fas fa-check me-2"></i>Beachfront accommodation</li>
+                                <li class="mb-2"><i class="fas fa-check me-2"></i>All meals included</li>
+                                <li class="mb-2"><i class="fas fa-check me-2"></i>Snorkeling activities</li>
+                                <li class="mb-2"><i class="fas fa-check me-2"></i>Historic tours</li>
+                                <li class="mb-2"><i class="fas fa-check me-2"></i>Professional guide</li>
+                            </ul>
+                        </div>
+                        <a href="contact.html" class="btn btn-light btn-lg w-100 mb-3">
+                            <i class="fas fa-phone me-2"></i>Contact for Booking
+                        </a>
+                        <a href="contact.html" class="btn btn-outline-light btn-lg w-100">
+                            <i class="fas fa-envelope me-2"></i>Get Quote
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activities & Highlights -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5 fade-in">
+                    <h2 class="h1 mb-4">Activities & Highlights</h2>
+                    <p class="lead text-muted">
+                        Experience the best of Malindi with our carefully curated activities and cultural experiences.
+                    </p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4 fade-in">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" class="card-img-top" alt="Snorkeling" style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title">Coral Reef Snorkeling</h5>
+                            <p class="card-text text-muted">Explore the vibrant coral gardens and marine life in Malindi's protected marine park.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 fade-in">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" class="card-img-top" alt="Historic Sites" style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title">Historic Site Tours</h5>
+                            <p class="card-text text-muted">Visit the Vasco da Gama pillar and other historic Portuguese ruins dating back centuries.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 fade-in">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" class="card-img-top" alt="Dhow Sailing" style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title">Dhow Sailing</h5>
+                            <p class="card-text text-muted">Sail on a traditional dhow and enjoy spectacular sunsets over the Indian Ocean.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5 class="fw-bold mb-3">Mara Tours</h5>
+                    <p class="text-muted">Your trusted partner in creating unforgettable travel experiences around the world.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-light"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-light"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-light"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-light"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="fw-bold mb-3">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-muted text-decoration-none">Home</a></li>
+                        <li class="mb-2"><a href="about.html" class="text-muted text-decoration-none">About Us</a></li>
+                        <li class="mb-2"><a href="services.html" class="text-muted text-decoration-none">Services</a></li>
+                        <li class="mb-2"><a href="destinations.html" class="text-muted text-decoration-none">Destinations</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-muted text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h6 class="fw-bold mb-3">Contact Info</h6>
+                    <p class="text-muted mb-2"><i class="fas fa-phone me-2"></i> +1 (555) 123-4567</p>
+                    <p class="text-muted mb-2"><i class="fas fa-envelope me-2"></i> info@maratours.com</p>
+                    <p class="text-muted"><i class="fas fa-map-marker-alt me-2"></i> 123 Travel Street, Adventure City</p>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <h6 class="fw-bold mb-3">Newsletter</h6>
+                    <p class="text-muted mb-3">Subscribe for travel updates and special offers.</p>
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Your email">
+                        <button class="btn btn-primary" type="button">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="text-muted mb-0">&copy; 2024 Mara Tours. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-muted text-decoration-none me-3">Privacy Policy</a>
+                    <a href="#" class="text-muted text-decoration-none">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/1234567890?text=Hi%20Mara%20Tours!%20I'm%20interested%20in%20the%20Malindi%20package." class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+    <script>
+        // Fade-in animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all fade-in elements
+        document.addEventListener('DOMContentLoaded', () => {
+            const fadeElements = document.querySelectorAll('.fade-in');
+            fadeElements.forEach(el => {
+                observer.observe(el);
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+>>>>>>> 76b946b6090433413281289d2fd2330a072a0c3b
