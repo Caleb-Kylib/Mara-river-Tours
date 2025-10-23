@@ -139,6 +139,11 @@ p {
     height: 70px;
 }
 
+.nav-logo-img {
+    width: 120px; /* adjust size */
+    height: 80px;
+}
+
 .nav-logo h2 {
     color: #667eea;
     margin: 0;
