@@ -2454,4 +2454,199 @@ body {
   transform: scale(1.05);
 }
 
+/* ===== Diani Beach Page Styles ===== */
+
+.diani-banner {
+  background: url('./assets/img/beach.jpg') center/cover no-repeat;
+  height: 80vh;
+  margin-top: 70px;
+  position: relative;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.diani-banner-overlay {
+  background: rgba(0, 0, 0, 0.45); /* semi-transparent overlay */
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.diani-banner-overlay h1 {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.diani-banner-overlay p.lead {
+  color: #fff;
+  font-size: 1.3rem;
+  margin-top: 10px;
+}
+
+
+/* Diani Beach Activities Section */
+.diani-activities {
+  background-color: #faf9f6;
+}
+
+.section-header h2 {
+  color: #2c1a0f;
+  font-size: 2.2rem;
+}
+
+.activity-card {
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.activity-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.activity-card:hover img {
+  transform: scale(1.05);
+}
+
+.activity-content {
+  padding: 20px;
+}
+
+.activity-content h4 {
+  color: #f9a825;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.activity-content p {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.activity-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Diani CTA */
+.diani-cta {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+              url('./assets/img/Diani_Beach_006.jpg') center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+}
+
+.diani-cta h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.diani-cta p.lead {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+  color: #fff;
+}
+
+.diani-cta .btn {
+  background-color: #f9a825;
+  color: #2c1a0f;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.diani-cta .btn:hover {
+  background-color: #d89b00;
+  color: #fff;
+}
+
+
+
+
+/* ===== Footer Styles ===== */
+.footer {
+  background-color: #2c1a0f;
+  color: #f5f5f5;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.footer-section {
+  flex: 1 1 250px;
+  margin-bottom: 1.5rem;
+}
+
+.footer h3,
+.footer h4 {
+  color: #f9a825;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.footer p {
+  color: #f5f5f5;
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+.footer a {
+  color: #f5f5f5;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #f9a825;
+}
+
+.footer .social-links a {
+  color: #f5f5f5;
+  font-size: 1.2rem;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.footer .social-links a:hover {
+  color: #f9a825;
+  transform: scale(1.1);
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 15px;
+  color: #f5f5f5;
+  font-size: 0.95rem;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-section {
+    margin-bottom: 2rem;
+  }
+
+  .footer .social-links {
+    justify-content: center;
+  }
+}
 
