@@ -2672,3 +2672,594 @@ body {
   }
 }
 
+/* ===== DIANI DESTINATION PAGE - NEW SECTIONS ===== */
+
+/* 4. How to Get There Section */
+.diani-transport-section {
+  background-color: #ffffff;
+}
+
+.diani-transport-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 2.5rem;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border: 1px solid #f0f0f0;
+}
+
+.diani-transport-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.diani-transport-icon {
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(135deg, #00b4db 0%, #0083b0 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  color: white;
+  box-shadow: 0 4px 15px rgba(0, 180, 219, 0.3);
+}
+
+.diani-transport-title {
+  color: #2c1a0f;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.diani-transport-text {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.diani-transport-image {
+  margin-top: 1.5rem;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.diani-transport-image img {
+  transition: transform 0.4s ease;
+}
+
+.diani-transport-card:hover .diani-transport-image img {
+  transform: scale(1.08);
+}
+
+/* 5. Where to Stay Section */
+.diani-stay-section {
+  background-color: #f7f3ef;
+}
+
+.diani-stay-card {
+  background: #fff;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.diani-stay-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.diani-stay-image {
+  height: 240px;
+  overflow: hidden;
+  position: relative;
+}
+
+.diani-stay-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.diani-stay-card:hover .diani-stay-image img {
+  transform: scale(1.1);
+}
+
+.diani-stay-content {
+  padding: 1.8rem;
+}
+
+.diani-stay-name {
+  color: #2c1a0f;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.diani-stay-description {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 1.2rem;
+  min-height: 70px;
+}
+
+.diani-stay-price {
+  color: #00b4db;
+  font-size: 1.1rem;
+  margin-bottom: 1.2rem;
+}
+
+.diani-stay-price strong {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.diani-stay-card .btn-primary {
+  background: linear-gradient(135deg, #00b4db 0%, #0083b0 100%);
+  border: none;
+  padding: 0.7rem 1.5rem;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.diani-stay-card .btn-primary:hover {
+  background: linear-gradient(135deg, #0083b0 0%, #006080 100%);
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 180, 219, 0.3);
+}
+
+/* 6. Photo Gallery Section */
+.diani-gallery-section {
+  background-color: #ffffff;
+}
+
+.diani-gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.diani-gallery-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.diani-gallery-item img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.diani-gallery-item:hover img {
+  transform: scale(1.15);
+}
+
+.diani-gallery-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 180, 219, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.diani-gallery-item:hover .diani-gallery-overlay {
+  opacity: 1;
+}
+
+.diani-gallery-overlay i {
+  font-size: 3rem;
+  color: white;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+/* 7. Guest Reviews Section */
+.diani-reviews-section {
+  background: linear-gradient(135deg, #f7f9fc 0%, #e8f4f8 100%);
+}
+
+.diani-review-card {
+  max-width: 700px;
+  background: white;
+  padding: 3rem 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.diani-review-avatar {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 1.5rem;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid #00b4db;
+  box-shadow: 0 4px 15px rgba(0, 180, 219, 0.3);
+}
+
+.diani-review-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.diani-review-rating {
+  display: flex;
+  justify-content: center;
+  gap: 0.3rem;
+}
+
+.diani-review-rating i {
+  color: #ffc107;
+  font-size: 1.3rem;
+}
+
+.diani-review-text {
+  color: #555;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  font-style: italic;
+  margin: 1.5rem 0;
+  position: relative;
+}
+
+.diani-review-text::before {
+  content: '"';
+  font-size: 4rem;
+  color: #00b4db;
+  opacity: 0.2;
+  position: absolute;
+  top: -30px;
+  left: -10px;
+  font-family: Georgia, serif;
+}
+
+.diani-review-name {
+  color: #2c1a0f;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+
+.diani-review-location {
+  color: #888;
+  font-size: 0.95rem;
+}
+
+/* Carousel Controls for Reviews */
+#reviewsCarousel .carousel-control-prev,
+#reviewsCarousel .carousel-control-next {
+  width: 50px;
+  height: 50px;
+  background: rgba(0, 180, 219, 0.8);
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 1;
+}
+
+#reviewsCarousel .carousel-control-prev:hover,
+#reviewsCarousel .carousel-control-next:hover {
+  background: rgba(0, 180, 219, 1);
+}
+
+#reviewsCarousel .carousel-indicators button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #00b4db;
+  opacity: 0.5;
+}
+
+#reviewsCarousel .carousel-indicators button.active {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+/* 8. Packages & Pricing Section */
+.diani-pricing-section {
+  background-color: #ffffff;
+}
+
+.diani-pricing-highlight {
+  background: linear-gradient(135deg, #00b4db 0%, #0083b0 100%);
+  color: white;
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 180, 219, 0.3);
+  height: 100%;
+}
+
+.diani-pricing-highlight h3 {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.diani-price-box {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  padding: 2rem;
+  border-radius: 15px;
+  text-align: center;
+  margin: 1.5rem 0;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.diani-price-label {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  opacity: 0.9;
+  margin-bottom: 0.5rem;
+}
+
+.diani-price-amount {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1;
+  margin: 0.5rem 0;
+}
+
+.diani-price-duration {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.diani-inclusions-box,
+.diani-exclusions-box {
+  background: #f9f9f9;
+  padding: 1.8rem;
+  border-radius: 15px;
+  height: 100%;
+  border-left: 4px solid #28a745;
+}
+
+.diani-exclusions-box {
+  border-left-color: #dc3545;
+}
+
+.diani-inclusions-list,
+.diani-exclusions-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.diani-inclusions-list li,
+.diani-exclusions-list li {
+  padding: 0.6rem 0;
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.diani-inclusions-list li:last-child,
+.diani-exclusions-list li:last-child {
+  border-bottom: none;
+}
+
+.diani-addons-box {
+  background: #fff;
+  padding: 1.8rem;
+  border-radius: 15px;
+  border: 2px solid #e0e0e0;
+}
+
+.diani-addon-item {
+  background: #f9f9f9;
+  padding: 1rem 1.2rem;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.diani-addon-item:hover {
+  background: #e8f4f8;
+  transform: translateX(5px);
+}
+
+.diani-addon-item i {
+  font-size: 1.2rem;
+}
+
+.diani-addon-item span {
+  flex: 1;
+  color: #555;
+  font-weight: 500;
+}
+
+.diani-addon-item strong {
+  color: #00b4db;
+  font-size: 1.1rem;
+}
+
+/* 10. Explore Other Destinations Section */
+.diani-destinations-section {
+  background: linear-gradient(135deg, #f7f9fc 0%, #e8f4f8 100%);
+}
+
+.diani-destination-card {
+  background: white;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.diani-destination-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.diani-destination-image {
+  height: 280px;
+  overflow: hidden;
+  position: relative;
+}
+
+.diani-destination-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.diani-destination-card:hover .diani-destination-image img {
+  transform: scale(1.1);
+}
+
+.diani-destination-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.diani-destination-card:hover .diani-destination-overlay {
+  opacity: 1;
+}
+
+.diani-destination-overlay .btn {
+  padding: 0.8rem 2rem;
+  font-weight: 600;
+  border-radius: 50px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.diani-destination-overlay .btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
+}
+
+.diani-destination-content {
+  padding: 1.8rem;
+}
+
+.diani-destination-content h4 {
+  color: #2c1a0f;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.diani-destination-content p {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Responsive Styles for Diani Sections */
+@media (max-width: 768px) {
+  .diani-transport-card {
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .diani-transport-title {
+    font-size: 1.5rem;
+  }
+
+  .diani-stay-image {
+    height: 200px;
+  }
+
+  .diani-stay-description {
+    min-height: auto;
+  }
+
+  .diani-gallery-item img {
+    height: 220px;
+  }
+
+  .diani-review-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .diani-review-text {
+    font-size: 1rem;
+  }
+
+  .diani-pricing-highlight {
+    margin-bottom: 2rem;
+  }
+
+  .diani-price-amount {
+    font-size: 2.5rem;
+  }
+
+  .diani-destination-image {
+    height: 220px;
+  }
+
+  .diani-transport-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .diani-banner-overlay h1 {
+    font-size: 2rem;
+  }
+
+  .diani-banner-overlay p.lead {
+    font-size: 1.1rem;
+  }
+
+  .diani-review-avatar {
+    width: 80px;
+    height: 80px;
+  }
+
+  .diani-addon-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+  }
+
+  .diani-addon-item strong {
+    margin-top: 0.5rem;
+  }
+}
+
