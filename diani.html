@@ -408,103 +408,70 @@
   </div>
 </div>
 
-<!-- Guest Reviews Section -->
-<section class="diani-reviews-section py-5">
+
+<!-- Destination Testimonials -->
+
+<!-- Destination Testimonials Section -->
+<section class="destination-testimonials" id="dianiTestimonials">
   <div class="container">
-    <div class="text-center mb-5">
-      <h2 class="fw-bold">What Our Guests Say</h2>
-      <p class="text-muted">Real experiences from travelers who discovered Diani with us</p>
-    </div>
+    <h2 class="section-title">Traveler Stories from Diani Beach</h2>
 
-    <div id="reviewsCarousel" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#reviewsCarousel" data-bs-slide-to="0" class="active"></button>
-        <button type="button" data-bs-target="#reviewsCarousel" data-bs-slide-to="1"></button>
-        <button type="button" data-bs-target="#reviewsCarousel" data-bs-slide-to="2"></button>
-      </div>
-
-      <div class="carousel-inner">
-        <!-- Review 1 -->
-        <div class="carousel-item active">
-          <div class="diani-review-card mx-auto">
-            <div class="diani-review-avatar">
-              <img src="https://i.pravatar.cc/150?img=1" alt="Sarah Johnson" class="rounded-circle">
-            </div>
-            <div class="diani-review-rating mb-3">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <p class="diani-review-text">
-              "Diani Beach exceeded all our expectations! The white sand, crystal-clear water, 
-              and warm hospitality made our honeymoon absolutely magical. The snorkeling was 
-              incredible, and the resort staff went above and beyond."
-            </p>
-            <h5 class="diani-review-name">Sarah Johnson</h5>
-            <p class="diani-review-location text-muted">United Kingdom</p>
+    <div class="destination-slider">
+      <div class="destination-slides">
+        <!-- Slide 1 -->
+        <div class="testimonial-card active">
+          <div class="testimonial-photo">
+            <img src="./assets/img/diani-guest1.jpg" alt="Traveler Sarah">
+          </div>
+          <div class="testimonial-body">
+            <p>"Our stay in Diani was magical! From snorkeling at Galu Reef to sunset yoga by the beach, everything felt straight out of a dream."</p>
+            <h4>Sarah Johnson</h4>
+            <span>United Kingdom</span>
           </div>
         </div>
 
-        <!-- Review 2 -->
-        <div class="carousel-item">
-          <div class="diani-review-card mx-auto">
-            <div class="diani-review-avatar">
-              <img src="https://i.pravatar.cc/150?img=12" alt="Michael Chen" class="rounded-circle">
-            </div>
-            <div class="diani-review-rating mb-3">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <p class="diani-review-text">
-              "Perfect family vacation! The kids loved the beach and the Colobus Monkey Sanctuary. 
-              Our tour guide was knowledgeable and friendly. Mara Tours organized everything 
-              seamlessly. We'll definitely be back!"
-            </p>
-            <h5 class="diani-review-name">Michael Chen</h5>
-            <p class="diani-review-location text-muted">Singapore</p>
+        <!-- Slide 2 -->
+        <div class="testimonial-card">
+          <div class="testimonial-photo">
+            <img src="./assets/img/diani-guest2.jpg" alt="Traveler Omar">
+          </div>
+          <div class="testimonial-body">
+            <p>"The white sands, turquoise waters, and the Colobus Monkey Sanctuary visit made this trip unforgettable!"</p>
+            <h4>Omar Mwangi</h4>
+            <span>Kenya</span>
           </div>
         </div>
 
-        <!-- Review 3 -->
-        <div class="carousel-item">
-          <div class="diani-review-card mx-auto">
-            <div class="diani-review-avatar">
-              <img src="https://i.pravatar.cc/150?img=5" alt="Emma Martinez" class="rounded-circle">
-            </div>
-            <div class="diani-review-rating mb-3">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star-half-alt"></i>
-            </div>
-            <p class="diani-review-text">
-              "A tropical paradise! The jet ski adventure was thrilling, and the beachfront 
-              yoga sessions were so relaxing. The local village tour gave us wonderful insight 
-              into Kenyan culture. Highly recommend!"
-            </p>
-            <h5 class="diani-review-name">Emma Martinez</h5>
-            <p class="diani-review-location text-muted">Spain</p>
+        <!-- Slide 3 -->
+        <div class="testimonial-card">
+          <div class="testimonial-photo">
+            <img src="./assets/img/diani-guest3.jpg" alt="Traveler Anna">
+          </div>
+          <div class="testimonial-body">
+            <p>"Diani Beach is pure paradise! The hospitality, food, and water activities made this the best beach holiday ever."</p>
+            <h4>Anna Müller</h4>
+            <span>Germany</span>
           </div>
         </div>
       </div>
 
-      <button class="carousel-control-prev" type="button" data-bs-target="#reviewsCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#reviewsCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+      <!-- Controls -->
+      <div class="destination-controls">
+        <button id="prevDest" class="dest-btn"><i class="fas fa-chevron-left"></i></button>
+        <button id="nextDest" class="dest-btn"><i class="fas fa-chevron-right"></i></button>
+      </div>
+
+      <!-- Dots -->
+      <div class="destination-dots">
+        <span class="dot active" data-slide="0"></span>
+        <span class="dot" data-slide="1"></span>
+        <span class="dot" data-slide="2"></span>
+      </div>
     </div>
   </div>
 </section>
+
+
 
 <!-- Packages & Pricing Section -->
 <section class="diani-pricing-section py-5 bg-white">

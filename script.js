@@ -565,3 +565,26 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+
+// global testimonials js
+
+const globalSlides = document.querySelectorAll("#globalTestimonialSlider .testimonial-item");
+let globalIndex = 0;
+
+document.getElementById("nextGlobal").addEventListener("click", () => {
+  globalSlides[globalIndex].classList.remove("active");
+  globalIndex = (globalIndex + 1) % globalSlides.length;
+  globalSlides[globalIndex].classList.add("active");
+});
+
+document.getElementById("prevGlobal").addEventListener("click", () => {
+  globalSlides[globalIndex].classList.remove("active");
+  globalIndex = (globalIndex - 1 + globalSlides.length) % globalSlides.length;
+  globalSlides[globalIndex].classList.add("active");
+});
+
+// Optional auto-slide
+setInterval(() => {
+  document.getElementById("nextGlobal").click();
+}, 6000);
