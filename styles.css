@@ -2674,6 +2674,45 @@ body {
 
 /* ===== DIANI DESTINATION PAGE - NEW SECTIONS ===== */
 
+/* Diani Highlights Section */
+.diani-highlights-section {
+  background: linear-gradient(135deg, #bce8f5 0%, #e7f9f2 100%);
+  color: #04364a;
+}
+
+.diani-section-title {
+  font-weight: 700;
+  color: #025464;
+}
+
+.diani-highlight-card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.diani-highlight-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.diani-highlight-card i {
+  color: #028090;
+}
+
+.diani-highlight-card h5 {
+  color: #034b5a;
+  margin-bottom: 0.5rem;
+}
+
+.diani-highlight-card p {
+  font-size: 0.95rem;
+  color: #04364a;
+}
+
+
+
 /* 4. How to Get There Section */
 .diani-transport-section {
   background-color: #ffffff;
