@@ -2680,64 +2680,109 @@ body {
 
 /* 4. How to Get There Section */
 .diani-transport-section {
-  background-color: #ffffff;
+  background: linear-gradient(135deg, #f8fbfd 0%, #ffffff 100%);
 }
 
 .diani-transport-card {
   background: #fff;
   border-radius: 20px;
-  padding: 2.5rem;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-  transition: all 0.3s ease;
-  border: 1px solid #f0f0f0;
+  padding: 2rem;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 2px solid #e8f4f8;
+  position: relative;
+  overflow: hidden;
+}
+
+.diani-transport-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #00b4db 0%, #0083b0 100%);
+  transform: scaleX(0);
+  transition: transform 0.4s ease;
+}
+
+.diani-transport-card:hover::before {
+  transform: scaleX(1);
 }
 
 .diani-transport-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+  transform: translateY(-12px);
+  box-shadow: 0 20px 40px rgba(0, 180, 219, 0.15);
+  border-color: #00b4db;
 }
 
 .diani-transport-icon {
-  width: 70px;
-  height: 70px;
+  width: 90px;
+  height: 90px;
   background: linear-gradient(135deg, #00b4db 0%, #0083b0 100%);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 1.5rem;
-  font-size: 2rem;
+  margin: 0 auto 1.5rem;
+  box-shadow: 0 8px 20px rgba(0, 180, 219, 0.25);
+  transition: all 0.4s ease;
+}
+
+.diani-transport-icon i {
+  font-size: 2.5rem;
   color: white;
-  box-shadow: 0 4px 15px rgba(0, 180, 219, 0.3);
+}
+
+.diani-transport-card:hover .diani-transport-icon {
+  transform: scale(1.1) rotate(5deg);
+  box-shadow: 0 12px 30px rgba(0, 180, 219, 0.4);
 }
 
 .diani-transport-title {
-  color: #2c1a0f;
-  font-size: 1.8rem;
+  color: #025464;
+  font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 1rem;
+  letter-spacing: 0.3px;
 }
 
 .diani-transport-text {
-  color: #555;
-  font-size: 1rem;
-  line-height: 1.8;
-  margin-bottom: 1.5rem;
+  color: #5a6c7d;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 1.2rem;
+  text-align: center;
 }
 
 .diani-transport-image {
-  margin-top: 1.5rem;
-  border-radius: 15px;
+  margin-top: 1.2rem;
+  border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.diani-transport-image::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.1) 100%);
+  pointer-events: none;
 }
 
 .diani-transport-image img {
-  transition: transform 0.4s ease;
+  transition: transform 0.5s ease;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
 
 .diani-transport-card:hover .diani-transport-image img {
-  transform: scale(1.08);
+  transform: scale(1.1);
 }
 
 /* 5. Where to Stay Section */
@@ -3195,12 +3240,29 @@ body {
 /* Responsive Styles for Diani Sections */
 @media (max-width: 768px) {
   .diani-transport-card {
-    padding: 1.5rem;
+    padding: 1.8rem 1.5rem;
     margin-bottom: 1.5rem;
   }
 
+  .diani-transport-icon {
+    width: 75px;
+    height: 75px;
+  }
+
+  .diani-transport-icon i {
+    font-size: 2rem;
+  }
+
   .diani-transport-title {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+  }
+
+  .diani-transport-text {
+    font-size: 0.9rem;
+  }
+
+  .diani-transport-image img {
+    height: 180px;
   }
 
   .diani-stay-image {
