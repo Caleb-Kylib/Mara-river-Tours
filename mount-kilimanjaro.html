@@ -5,14 +5,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mount Kilimanjaro - Mara Tours</title>
-
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
-
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css" />
 </head>
@@ -42,151 +41,340 @@
     <!-- Banner -->
     <section class="kilimanjaro-banner">
         <div class="maasai-banner-overlay d-flex align-items-center justify-content-center">
-            <div class="text-center text-white">
-                <h1 class="display-4 fw-bold">Mount Kilimanjaro</h1>
-                <p class="lead">The Roof of Africa</p>
+            <div class="text-center text-white p-3">
+                <h1 class="display-3 fw-bold mb-3">Conquer the Roof of Africa</h1>
+                <p class="lead mb-4">Embark on the ultimate adventure to the summit of Mount Kilimanjaro (5,895m).</p>
+                <div class="d-flex justify-content-center gap-3">
+                    <a href="#packages" class="btn btn-primary btn-lg">View Packages</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="kili-stats">
+        <div class="container">
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-3 col-6">
+                    <div class="kili-stat-item">
+                        <div class="kili-stat-icon">
+                            <i class="fas fa-mountain"></i>
+                        </div>
+                        <div class="kili-stat-number">5,895m</div>
+                        <div class="kili-stat-label">Elevation</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="kili-stat-item">
+                        <div class="kili-stat-icon">
+                            <i class="fas fa-hiking"></i>
+                        </div>
+                        <div class="kili-stat-number">97%</div>
+                        <div class="kili-stat-label">Success Rate</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="kili-stat-item">
+                        <div class="kili-stat-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <div class="kili-stat-number">5-9</div>
+                        <div class="kili-stat-label">Days to Climb</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="kili-stat-item">
+                        <div class="kili-stat-icon">
+                            <i class="fas fa-temperature-high"></i>
+                        </div>
+                        <div class="kili-stat-number">5</div>
+                        <div class="kili-stat-label">Climate Zones</div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Introduction -->
-    <section class="maasai-intro py-5">
+    <section class="py-5">
         <div class="container text-center">
-            <h2 class="h1 mb-4">Conquer The Summit</h2>
-            <p class="lead text-muted">
-                Rising majestically from the African plains, Mount Kilimanjaro is the world's highest free-standing
-                mountain at 5,895 meters. Its snow-capped peak is a beacon for adventurers worldwide, offering a
-                challenging yet achievable trek through five distinct climate zones.
-            </p>
-        </div>
-    </section>
-
-    <!-- Activities -->
-    <section class="maasai-activities py-5">
-        <div class="container">
-
-            <!-- Trekking -->
-            <div class="maasai-activity-row d-flex flex-column flex-md-row align-items-center mb-5">
-                <div class="maasai-activity-image flex-md-fill">
-                    <img src="./assets/img/trekking2.jpg" alt="Kilimanjaro Trekking">
-                </div>
-                <div class="maasai-activity-text flex-md-fill px-md-5 mt-3 mt-md-0">
-                    <h3>Summit Trekking</h3>
-                    <p>Embark on a multi-day journey to Uhuru Peak. Choose from various routes like Machame (Wiskey),
-                        Marangu (Coca-Cola), or Lemosho, each offering different scenery and acclimatization profiles.
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="h1 mb-4">Why Climb With Mara Tours?</h2>
+                    <p class="lead text-muted">
+                        Mount Kilimanjaro is a challenging but walkable peak that requires no technical mountaineering
+                        skills.
+                        We specialize in small group treks with expert local guides who prioritize safety and
+                        acclimatization (Pole Pole).
+                        From the rainforests of the base to the arctic summit, we support you every step of the way.
                     </p>
                 </div>
             </div>
-
-            <!-- Scenery -->
-            <div class="maasai-activity-row d-flex flex-column flex-md-row-reverse align-items-center mb-5">
-                <div class="maasai-activity-image flex-md-fill">
-                    <img src="./assets/img/murchison-falls-view.jpg" alt="Alpine Scenery">
-                </div>
-                <div class="maasai-activity-text flex-md-fill px-md-5 mt-3 mt-md-0">
-                    <h3>Unique Landscapes</h3>
-                    <p>Traverse through lush rainforests, heath and moorland, alpine deserts, and finally, the arctic
-                        summit zone. Marvel at giant senecios, lobelias, and the spectacular glaciers near the crater
-                        rim.</p>
-                </div>
-            </div>
-
-            <!-- Acclimatization -->
-            <div class="maasai-activity-row d-flex flex-column flex-md-row align-items-center mb-5">
-                <div class="maasai-activity-image flex-md-fill">
-                    <img src="./assets/img/trekking3.jpg" alt="Acclimatization Walks">
-                </div>
-                <div class="maasai-activity-text flex-md-fill px-md-5 mt-3 mt-md-0">
-                    <h3>Acclimatization Walks</h3>
-                    <p>"Pole Pole" (slowly, slowly) is the motto. Our itineraries are designed with acclimatization days
-                        to maximize your chances of reaching the summit safely and enjoying the experience.</p>
-                </div>
-            </div>
         </div>
     </section>
 
-    <!-- Tour Details -->
-    <section class="mara-tour-details py-5">
+    <!-- Routes Overview -->
+    <section class="py-5 bg-light" id="routes">
         <div class="container">
-
-            <!-- Section Title -->
             <div class="text-center mb-5">
-                <h2 class="h1 mb-3">Climb Kilimanjaro</h2>
-                <p class="lead text-muted">Join our expert team for a safe and successful expedition to the top of
-                    Africa.</p>
+                <h2 class="mb-3">Choose Your Route</h2>
+                <p class="text-muted">We offer three distinct routes to the summit, each with its own character.</p>
             </div>
 
-            <!-- Machame Route -->
-            <div class="tour-option mb-5">
-                <div class="row align-items-center">
-                    <div class="col-md-6">
-                        <img src="./assets/img/trekking2.jpg" alt="Machame Route" class="img-fluid rounded-3 shadow-sm">
+            <div class="row g-4">
+                <!-- Machame Route -->
+                <div class="col-md-4">
+                    <div class="kili-route-card">
+                        <div class="kili-route-img">
+                            <img src="./assets/img/trekking2.jpg" alt="Machame Route">
+                        </div>
+                        <div class="kili-route-body">
+                            <span class="kili-route-badge">Most Popular</span>
+                            <h3>Machame Route</h3>
+                            <p class="text-muted small mb-0">"The Whiskey Route"</p>
+                            <ul class="kili-route-features">
+                                <li><i class="fas fa-clock"></i> 6-7 Days</li>
+                                <li><i class="fas fa-tachometer-alt"></i> High Difficulty</li>
+                                <li><i class="fas fa-campground"></i> Camping Only</li>
+                                <li><i class="fas fa-check-circle"></i> Best Acclimatization</li>
+                            </ul>
+                            <a href="#machame-details" class="btn btn-outline w-100">View Itinerary</a>
+                        </div>
                     </div>
-                    <div class="col-md-6">
-                        <h3 class="mt-4 mt-md-0">Machame Route (7 Days)</h3>
-                        <p>The "Whiskey Route" is popular for its scenic beauty and good acclimatization profile. It
-                            approaches from the south and descends via Mweka.</p>
+                </div>
 
-                        <h5 class="text-warning mt-3">Itinerary</h5>
-                        <ul>
-                            <li>Day 1: Machame Gate to Machame Camp</li>
-                            <li>Day 2: Machame Camp to Shira 2 Camp</li>
-                            <li>Day 3: Shira 2 to Lava Tower to Barranco Camp</li>
-                            <li>Day 4: Barranco Wall to Karanga Camp</li>
-                            <li>Day 5: Karanga to Barafu Camp (Base Camp)</li>
-                            <li>Day 6: Summit Night! Uhuru Peak & descent to Mweka</li>
-                            <li>Day 7: Mweka Camp to Mweka Gate</li>
-                        </ul>
+                <!-- Marangu Route -->
+                <div class="col-md-4">
+                    <div class="kili-route-card">
+                        <div class="kili-route-img">
+                            <img src="./assets/img/trekking3.jpg" alt="Marangu Route">
+                        </div>
+                        <div class="kili-route-body">
+                            <span class="kili-route-badge">Hut Accommodation</span>
+                            <h3>Marangu Route</h3>
+                            <p class="text-muted small mb-0">"The Coca-Cola Route"</p>
+                            <ul class="kili-route-features">
+                                <li><i class="fas fa-clock"></i> 5-6 Days</li>
+                                <li><i class="fas fa-tachometer-alt"></i> Moderate Difficulty</li>
+                                <li><i class="fas fa-home"></i> Huts Available</li>
+                                <li><i class="fas fa-check-circle"></i> Gradual Slope</li>
+                            </ul>
+                            <a href="contact.html" class="btn btn-outline w-100">Inquire Now</a>
+                        </div>
+                    </div>
+                </div>
 
-                        <h5 class="text-warning mt-3">Tour Price</h5>
-                        <p><strong>$2,950 per person</strong> (7 Days)</p>
-
-                        <div class="row">
-                            <div class="col-6">
-                                <h6 class="text-success">Inclusions</h6>
-                                <ul>
-                                    <li>Park/Camping fees</li>
-                                    <li>Mountain Guides & Porters</li>
-                                    <li>3 Meals a day</li>
-                                    <li>Tents & sleeping mats</li>
-                                    <li>Rescue fees</li>
-                                </ul>
-                            </div>
-                            <div class="col-6">
-                                <h6 class="text-danger">Exclusions</h6>
-                                <ul>
-                                    <li>Personal hiking gear</li>
-                                    <li>Sleeping bags</li>
-                                    <li>Tips for crew (Mandatory)</li>
-                                </ul>
-                            </div>
+                <!-- Lemosho Route -->
+                <div class="col-md-4">
+                    <div class="kili-route-card">
+                        <div class="kili-route-img">
+                            <img src="./assets/img/murchison-falls-view.jpg" alt="Lemosho Route">
+                        </div>
+                        <div class="kili-route-body">
+                            <span class="kili-route-badge">Success Rate</span>
+                            <h3>Lemosho Route</h3>
+                            <p class="text-muted small mb-0">"The Scenic Route"</p>
+                            <ul class="kili-route-features">
+                                <li><i class="fas fa-clock"></i> 7-8 Days</li>
+                                <li><i class="fas fa-tachometer-alt"></i> Moderate Difficulty</li>
+                                <li><i class="fas fa-campground"></i> Camping Only</li>
+                                <li><i class="fas fa-check-circle"></i> Beautiful Views</li>
+                            </ul>
+                            <a href="contact.html" class="btn btn-outline w-100">Inquire Now</a>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
+
+    <!-- Featured Itinerary: Machame 7 Days -->
+    <section class="py-5" id="machame-details">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h3 class="mb-4">7-Day Machame Route Itinerary</h3>
+                    <div class="accordion kili-accordion" id="itineraryAccordion">
+                        <!-- Day 1 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#day1">
+                                    Day 1: Machame Gate to Machame Camp
+                                </button>
+                            </h2>
+                            <div id="day1" class="accordion-collapse collapse show"
+                                data-bs-parent="#itineraryAccordion">
+                                <div class="accordion-body">
+                                    <p><strong>Elevation:</strong> 1,800m to 2,835m | <strong>Time:</strong> 5-7 hours
+                                    </p>
+                                    <p>After registering at the gate, we begin our trek through the lush rainforest.
+                                        Watch for colobus monkeys and exotic birds in the canopy. We camp at Machame
+                                        Camp for the night.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Day 2 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#day2">
+                                    Day 2: Machame Camp to Shira 2 Camp
+                                </button>
+                            </h2>
+                            <div id="day2" class="accordion-collapse collapse" data-bs-parent="#itineraryAccordion">
+                                <div class="accordion-body">
+                                    <p><strong>Elevation:</strong> 2,835m to 3,750m | <strong>Time:</strong> 4-6 hours
+                                    </p>
+                                    <p>We leave the rainforest and enter the heath and moorland zone. The route is
+                                        steeper, but the views of the Shira Plateau are rewarding. We camp at Shira 2.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Day 3 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#day3">
+                                    Day 3: Shira 2 to Lava Tower to Barranco Camp
+                                </button>
+                            </h2>
+                            <div id="day3" class="accordion-collapse collapse" data-bs-parent="#itineraryAccordion">
+                                <div class="accordion-body">
+                                    <p><strong>Elevation:</strong> 3,750m to 4,600m to 3,900m | <strong>Time:</strong>
+                                        6-8 hours</p>
+                                    <p>This is a crucial acclimatization day. We climb up to Lava Tower (4,600m) for
+                                        lunch and then descend to Barranco Camp. This "climb high, sleep low" strategy
+                                        improves success rates.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Day 4 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#day4">
+                                    Day 4: Barranco Camp to Karanga Camp
+                                </button>
+                            </h2>
+                            <div id="day4" class="accordion-collapse collapse" data-bs-parent="#itineraryAccordion">
+                                <div class="accordion-body">
+                                    <p><strong>Elevation:</strong> 3,900m to 3,995m | <strong>Time:</strong> 4-5 hours
+                                    </p>
+                                    <p>We start by climbing the Great Barranco Wall – a steep but non-technical
+                                        scramble. The rest of the day is a short hike through the Karanga Valley,
+                                        allowing for rest and acclimatization.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Day 5 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#day5">
+                                    Day 5: Karanga Camp to Barafu Camp
+                                </button>
+                            </h2>
+                            <div id="day5" class="accordion-collapse collapse" data-bs-parent="#itineraryAccordion">
+                                <div class="accordion-body">
+                                    <p><strong>Elevation:</strong> 3,995m to 4,673m | <strong>Time:</strong> 3-4 hours
+                                    </p>
+                                    <p>A short but steep hike to Barafu Camp (Base Camp). We arrive early for an early
+                                        dinner and sleep, preparing for the midnight summit push.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Day 6 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#day6">
+                                    Day 6: Summit Night! Uhuru Peak & Decent
+                                </button>
+                            </h2>
+                            <div id="day6" class="accordion-collapse collapse" data-bs-parent="#itineraryAccordion">
+                                <div class="accordion-body">
+                                    <p><strong>Elevation:</strong> 4,673m to 5,895m (Summit) down to 3,100m |
+                                        <strong>Time:</strong> 11-14 hours</p>
+                                    <p>We start at midnight. The climb to Stella Point (5,756m) is the most mentally and
+                                        physically challenging. At sunrise, we reach Uhuru Peak – the Roof of Africa!
+                                        After celebrating, we descend all the way to Mweka Camp.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Day 7 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#day7">
+                                    Day 7: Mweka Camp to Mweka Gate
+                                </button>
+                            </h2>
+                            <div id="day7" class="accordion-collapse collapse" data-bs-parent="#itineraryAccordion">
+                                <div class="accordion-body">
+                                    <p><strong>Elevation:</strong> 3,100m to 1,640m | <strong>Time:</strong> 3-4 hours
+                                    </p>
+                                    <p>A gentle trek through the rainforest to Mweka Gate, where successful climbers
+                                        receive their summit certificates. We drive back to the hotel for a
+                                        well-deserved shower and celebration dinner.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar Info -->
+                <div class="col-lg-4 mt-5 mt-lg-0">
+                    <div class="diani-pricing-highlight mb-4">
+                        <h3>Plan Your Trip</h3>
+                        <p class="mb-4 text-white-50">Secure your spot on the mountain today.</p>
+
+                        <div class="mb-3">
+                            <label class="text-white small mb-1">Price per person</label>
+                            <h2 class="text-white fw-bold">$2,950</h2>
+                        </div>
+
+                        <ul class="list-unstyled text-white mb-4">
+                            <li class="mb-2"><i class="fas fa-check me-2"></i> All Park Fees</li>
+                            <li class="mb-2"><i class="fas fa-check me-2"></i> Professional Guides</li>
+                            <li class="mb-2"><i class="fas fa-check me-2"></i> Porters & Cook</li>
+                            <li class="mb-2"><i class="fas fa-check me-2"></i> 3 Meals Daily</li>
+                            <li class="mb-2"><i class="fas fa-check me-2"></i> Tents & Mats</li>
+                        </ul>
+
+                        <a href="contact.html" class="btn btn-light w-100 fw-bold">Book This Trek</a>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
 
     <!-- Call to Action -->
     <section class="mara-cta text-center py-5">
         <div class="container">
-            <h2 class="mb-3">Ready for the Challenge?</h2>
+            <h2 class="mb-3">Start Your Expedition</h2>
             <p class="lead mb-4">
-                Stand on the roof of Africa. Contact us to start planning your expedition.
+                Don't just dream it. Do it.
             </p>
-            <a href="contact.html" class="btn btn-warning btn-lg px-4 py-2">Book Your Climb</a>
+            <a href="contact.html" class="btn btn-warning btn-lg px-4 py-2">Contact Us Today</a>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer py-5 text-light">
         <div class="container">
-
-            <!-- Footer Content -->
             <div class="footer-content d-flex flex-column flex-md-row flex-wrap justify-content-between mb-4">
-
-                <!-- About -->
                 <div class="footer-section mb-4 mb-md-0">
                     <h3>Mara Tours</h3>
                     <p>Your trusted partner in creating unforgettable travel experiences around the world.</p>
@@ -197,8 +385,6 @@
                         <a href="#"><i class="fab fa-linkedin fa-lg"></i></a>
                     </div>
                 </div>
-
-                <!-- Quick Links -->
                 <div class="footer-section mb-4 mb-md-0">
                     <h4>Quick Links</h4>
                     <ul class="list-unstyled">
@@ -206,11 +392,9 @@
                         <li><a href="about.html">About Us</a></li>
                         <li><a href="services.html">Services</a></li>
                         <li><a href="destinations.html">Destinations</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
                     </ul>
                 </div>
-
-                <!-- Services -->
                 <div class="footer-section mb-4 mb-md-0">
                     <h4>Services</h4>
                     <ul class="list-unstyled">
@@ -221,22 +405,16 @@
                         <li><a href="services.html">Visa Assistance</a></li>
                     </ul>
                 </div>
-
-                <!-- Contact Info -->
                 <div class="footer-section">
                     <h4>Contact Info</h4>
                     <p><i class="fas fa-phone me-2"></i>+1 (555) 123-4567</p>
                     <p><i class="fas fa-envelope me-2"></i>info@maratours.com</p>
                     <p><i class="fas fa-map-marker-alt me-2"></i>123 Travel Street, Adventure City</p>
                 </div>
-
             </div>
-
-            <!-- Copyright -->
             <div class="footer-bottom text-center mt-4">
                 <p class="mb-0">&copy; 2025 Mara Tours. All Rights Reserved.</p>
             </div>
-
         </div>
     </footer>
 
