@@ -3329,3 +3329,81 @@ body {
   }
 }
 
+/* Serengeti Banner */
+.serengeti-banner {
+  background: url('./assets/img/pexels-tanzania-wild-sky-986912744-20179685.jpg') center/cover no-repeat;
+  height: 80vh;
+  margin-top: 70px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff; 
+}
+
+/* Ngorongoro Banner */
+.ngorongoro-banner {
+  background: url('./assets/img/Ngorongoro-Crater.jpg') center/cover no-repeat;
+  height: 80vh;
+  margin-top: 70px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff; 
+}
+
+/* Kilimanjaro Banner */
+.kilimanjaro-banner {
+  background: url('./assets/img/trekking2.jpg') center/cover no-repeat;
+  height: 80vh;
+  margin-top: 70px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff; 
+}
+
+/* Stone Town Banner */
+.stone-town-banner {
+  background: url('https://images.unsplash.com/photo-1523731407965-2430cd12f5e4?q=80&w=1200&auto=format&fit=crop') center/cover no-repeat;
+  height: 80vh;
+  margin-top: 70px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff; 
+}
+
+/* Nungwi Banner */
+.nungwi-banner {
+  background: url('./assets/img/beach 2.jpg') center/cover no-repeat;
+  height: 80vh;
+  margin-top: 70px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff; 
+}
+
+/* Tarangire Banner */
+.tarangire-banner {
+  background: url('./assets/img/elephant-safari.jpg') center/cover no-repeat;
+  height: 80vh;
+  margin-top: 70px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff; 
+}
+
